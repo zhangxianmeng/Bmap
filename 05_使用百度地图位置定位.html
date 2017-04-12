@@ -56,6 +56,7 @@
 		console.log(point.lat);
 		*/
 		var marker = new BMap.Marker(point);
+		console.log(point)
 		map.centerAndZoom(point,13);
 		map.addOverlay(marker);
 		marker.setAnimation(BMAP_ANIMATION_BOUNCE); 

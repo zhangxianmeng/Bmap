@@ -37,7 +37,8 @@
 			window.navigator.geolocation.getCurrentPosition(function(position) {
 				console.log(position.coords.latitude, position.coords.longitude);
 				//			创建地图标注
-				var marker = new BMap.Marker(position.coords);
+				var point = new BMap.Point(position.coords.longitude, position.coords.latitude);
+				var marker = new BMap.Marker(point);
 				//				添加标注
 				map.addOverlay(marker);
 				//				设置视图层 
